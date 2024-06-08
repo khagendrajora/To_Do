@@ -1,0 +1,56 @@
+1. npm init -y   //initialize nodejs
+
+		//package.json
+		"main":index.js to src/index.js  ?
+
+
+2. Install dependencies
+	npm install express,dotenv
+	create Express Server
+
+	npm install --save-dev typescript @types/node @types/express 	ts-node-dev
+
+//ts-node-dev is used for automatically restart the server
+
+ npm install typescript
+3.Create a tsconfig.json File:
+	npx tsc --init
+
+4.Edit the config file:
+	"outDir":"./dist
+	"rootDir":'./src'?
+
+5. Set Project Structure
+	 src/index.ts
+
+As previously discussed, executing a TypeScript file in Node is not supported by default. However, we can overcome this limitation by leveraging ts-node, a TypeScript execution environment for Node. Let’s first use ts-node with npx without installing it as a dependency and observe the output:
+
+npx ts-node src/index.ts
+
+The main advantage of using ts-node is that it eliminates the extra step of code transpilation and allows you to work with TypeScript code directly in a Node.js environment. It also comes in handy when working with standalone TypeScript files in the Node terminal.
+
+6.Add Script to 'package.json
+
+install nodemon
+
+	"scripts": {
+  "build": "tsc",    //compiles the code into js and saves in the dist
+  "start": "node dist/index.js", 
+  "dev": "ts-node-dev src/index.ts"  //to run the express server 					with the help of nodemon 					and ts-node.
+
+
+}
+
+7. Run Your Application:
+	npm run dev
+
+OR for production
+
+	npm run build
+npm start
+
+Building or transpiling the TypeScript files
+
+In a TypeScript project, transpiling or building involves the TypeScript Compiler (TSC) interpreting the tsconfig.json file to determine how to convert TypeScript files into valid JavaScript.
+
+To compile the code, you must execute the command npm run build. Upon successfully executing this command for the first time, a new dist directory is created in the project root.
