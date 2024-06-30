@@ -9,14 +9,23 @@ const taskSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    taskHandlers: {
-        type: mongoose.Schema.Types.ObjectId,
-        required: true,
-        ref: 'TaskHandler'
-    },
+    // taskHandlers: {
+    //     type: mongoose.Schema.Types.ObjectId,
+    //     required: true,
+    //     ref: 'TaskHandler'
+    // },
     status: {
         type: String,
         default: "pending"
+    },
+    assignedBy: {
+        type: String,
+        required: true
+    },
+    assignedTo: {
+        type: String,
+        required: true
+
     },
     deadline: {
         type: Date,

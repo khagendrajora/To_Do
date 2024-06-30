@@ -15,8 +15,7 @@ app.use('/api', userRoute)
 app.use('/api', taskRoute)
 
 
-
-const port: number = 3000
+const port: number = 5000
 app.get('/', (req: Request, res: Response) => {
     res.send('Express node + typescript project')
 })

@@ -8,12 +8,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "#737373",
+        background: "#e0e7ff",
         title: "#fcd34d",
         description: "#fafafa",
         text: "#e7e5e4",
         deadline: "#dc2626",
-        component: "#a1a1aa",
+        component: "#bae6fd",
         buttonbg: "#fbbf24"
 
       },

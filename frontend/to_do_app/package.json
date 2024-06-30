@@ -12,11 +12,19 @@
   "dependencies": {
     "@types/axios": "^0.14.0",
     "@types/cors": "^2.8.17",
+    "fontawesome": "^5.6.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.23.1"
+    "react-icons": "^5.2.1",
+    "react-router-dom": "^6.23.1",
+    "react-tooltip": "^5.27.0"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "@fortawesome/free-regular-svg-icons": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
